@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/html-favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shopping Cart Project</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left-section">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </div>
+            <div class="middle-section">
+                <a href="#">
+                    <img src="images/html-favicon.png" class="logo" />
+                </a>
+            </div>
+            <div class="right-section">
+                <span>
+                    <i class="fas fa-cart-plus"></i>
+                    <span class="item-counter">
+                        0
+                    </span>
+                </span>
+            </div>
+        </nav>
+    </header>
+    <section class="shop-body">
+        <div class="title">
+            <h1>
+                This is the shop page
+            </h1>
+        </div>
+        <div class="products-wrapper">
+            
+        </div>
+    </section>
+    <div class="back-drop"></div>
+    <div class="cart-modal">
+        <div class="cart-title">
+            <p>
+                Shopping Cart
+            </p>
+        </div>
+        <div class="items">
+            
+        </div>
+        <div class="cart-total-price">
+            <p>the total price is : <span class="total-price">0</span></p>
+            <div class="modal-btns">
+                <span class="close-cart">Close</span>
+                <span class="confirm-cart">Confirm</span>
+            </div>
+        </div>
+    </div>
+    <div class="product-modal">
+        <p class="modal-title">Product description</p>
+        <span class="close-prod-modal">
+            Close Modal
+        </span>
+    </div>
+
+    <!-- scripts -->
+    <script type="module" src="index.js"></script>
+    <!-- <div class="product">
+                <div class="product-image">
+                    <img src="images/shopping-cart-img-1.jpg" class="product-image"/>
+                </div>
+                <div class="products-details">
+                    <span class="product-name">
+                         braclet
+                    </span>
+                    <span class="product-price">
+                        <span>45</span>$
+                    </span>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/shopping-cart-img-2.jpg" class="product-image"/>
+                </div>
+                <div class="products-details">
+                    <span class="product-name">
+                         braclet 2
+                    </span>
+                    <span class="product-price">
+                        <span>60</span>$
+                    </span>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/shopping-cart-img-3.jpg" class="product-image"/>
+                </div>
+                <div class="products-details">
+                    <span class="product-name">
+                         braclet rosegold
+                    </span>
+                    <span class="product-price">
+                        <span>45</span>$
+                    </span>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/shopping-cart-img-4.jpg" class="product-image"/>
+                </div>
+                <div class="products-details">
+                    <span class="product-name">
+                         earings
+                    </span>
+                    <span class="product-price">
+                        <span>35</span>$
+                    </span>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/shopping-cart-img-5.jpg" class="product-image"/>
+                </div>
+                <div class="products-details">
+                    <span class="product-name">
+                         necklace
+                    </span>
+                    <span class="product-price">
+                        <span>105</span>$
+                    </span>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/shopping-cart-img-6.jpg" class="product-image"/>
+                </div>
+                <div class="products-details">
+                    <span class="product-name">
+                         braclet
+                    </span>
+                    <span class="product-price">
+                        <span>95</span>$
+                    </span>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/shopping-cart-img-7.jpg" class="product-image"/>
+                </div>
+                <div class="products-details">
+                    <span class="product-name">
+                         necklace
+                    </span>
+                    <span class="product-price">
+                        <span>132</span>$
+                    </span>
+                </div>
+                <div class="add-to-cart">
+                    <button class="add-to-cart-btn">
+                        Add to cart
+                    </button>
+                </div>
+            </div> -->
+            <!-- cart items
+            
+            
+            <div class="item">
+                <div class="cart-img">
+                    <img src="images/shopping-cart-img-1.jpg" class="cart-image"/>
+                </div>
+                <div class="cart-name">
+                    <p>
+                        braclet
+                    </p>
+                </div>
+                <div class="cart-item-count">
+                    <i class="fas fa-chevron-up"></i>
+                    <span>
+                        1
+                    </span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="cart-item-price">
+                    <span>45</span>$
+                </div>
+            </div>
+            <div class="item">
+                <div class="cart-img">
+                    <img src="images/shopping-cart-img-1.jpg" class="cart-image"/>
+                </div>
+                <div class="cart-name">
+                    <p>
+                        braclet
+                    </p>
+                </div>
+                <div class="cart-item-count">
+                    <i class="fas fa-chevron-up"></i>
+                    <span>
+                        1
+                    </span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="cart-item-price">
+                    <span>45</span>$
+                </div>
+            </div>
+            
+            
+            -->
+            
+
+<!-- <div class="products-details">
+            <img src="images/shopping-cart-img-1.jpg" />
+            <div>
+                <span>name : </span>
+                <span>braclet</span>
+            </div>
+            <div>
+                <span>price : </span>
+                <span>42.99$</span>
+            </div>
+            <p>description</p>
+        </div>
+        <span class="close-prod-modal">
+            Close Modal
+        </span> -->
+
+            
+</body>

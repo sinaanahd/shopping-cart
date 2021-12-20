@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Syncopate';
+    src: url(Syncopate-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Syncopate';
+    src: url(Syncopate-Bold.ttf);
+    font-weight: bold;
+}
